@@ -1,4 +1,4 @@
-[...](https://github.com/s1tcomsfan/knowledge_warehouse/blob/main/SQL/contents.md)
+[<-----](https://github.com/s1tcomsfan/knowledge_warehouse/blob/main/SQL/contents.md)
 
 # Типы данных
 
@@ -57,4 +57,4 @@
 | MEDIUMBLOB | 16 МБ |
 | LARGEBLOB | 4 ГБ |
 
-[...](https://github.com/s1tcomsfan/knowledge_warehouse/blob/main/SQL/contents.md)
+[<-----](https://github.com/s1tcomsfan/knowledge_warehouse/blob/main/SQL/contents.md)
