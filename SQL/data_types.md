@@ -1,3 +1,7 @@
+[...](https://github.com/s1tcomsfan/knowledge_warehouse/blob/main/SQL/contents.md)
+
+# Типы данных
+
 ## Символьные типы
 | Название | Определение |
 | -------- | ----------- |
@@ -52,3 +56,5 @@
 | BLOB | 65 КБ |
 | MEDIUMBLOB | 16 МБ |
 | LARGEBLOB | 4 ГБ |
+
+[...](https://github.com/s1tcomsfan/knowledge_warehouse/blob/main/SQL/contents.md)
