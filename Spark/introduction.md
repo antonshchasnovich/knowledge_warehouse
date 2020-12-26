@@ -22,3 +22,5 @@
 
 * **GraphX** - library for manipulating graphs (e.g., social network graphs, routes and connection points, or network topology graphs) and performing graph-parallel computations. It offers the standard graph algorithms for analysis, connections, and traversals.
 
+![Components and architecture](https://github.com/s1tcomsfan/knowledge_warehouse/blob/main/Spark/img/components_and_architecture.jpg)
+
