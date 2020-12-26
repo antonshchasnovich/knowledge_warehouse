@@ -1,3 +1,5 @@
+[<-----](https://github.com/s1tcomsfan/knowledge_warehouse/blob/main/Spark/contents.md)
+
 ## Spark’s design philosophy centers around **four key characteristics**:
 
 * **Speed** 
@@ -22,5 +24,33 @@
 
 * **GraphX** - library for manipulating graphs (e.g., social network graphs, routes and connection points, or network topology graphs) and performing graph-parallel computations. It offers the standard graph algorithms for analysis, connections, and traversals.
 
+## Components and architecture
+
 ![Components and architecture](https://github.com/s1tcomsfan/knowledge_warehouse/blob/main/Spark/img/components_and_architecture.jpg)
+
+* **Spark driver** - as the part of the Spark application responsible for instantiating a SparkSession, the Spark driver has multiple roles: it communicates with the cluster manager; it requests resources (CPU, memory, etc.) from the cluster manager for Spark’s executors (JVMs); and it transforms all the Spark operations into DAG computations, schedules them, and distributes their execution as tasks across the Spark executors. Once the resources are allocated, it communicates directly with the executors.
+
+* **SparkSession** - unified conduit to all Spark operations and data, provides a single unified entry point to all of Spark’s functionality.
+
+* **Cluster manager** - responsible for managing and allocating resources for the cluster of nodes on which your Spark application runs. Currently, Spark supports four cluster managers: ***the built-in standalone cluster manager, Apache Hadoop YARN, Apache Mesos, and Kubernetes***.
+
+* **Spark executor** - runs on each worker node in the cluster. The executors communicate with the driver program and are responsible for executing tasks on the workers. In most deployments modes, only a single executor runs per node.
+
+## Distributed data and partitions
+
+Actual physical data is distributed across storage as partitions residing. While the data is distributed as partitions across the physical cluster, Spark treats each partition as a high-level logical data abstraction — as a DataFrame in memory. Though this is not always possible, each Spark executor is preferably allocated a task that requires it to read the partition closest to it in the network, observing **data locality**.
+
+![Executors and partitions](https://github.com/s1tcomsfan/knowledge_warehouse/blob/main/Spark/img/executors_and_partitions.jpg)
+
+## Popular Spark use cases
+
+* Processing in parallel large data sets distributed across a cluster
+* Performing ad hoc or interactive queries to explore and visualize data sets
+* Building, training, and evaluating machine learning models using MLlib
+* Implementing end-to-end data pipelines from myriad streams of data
+* Analyzing graph data sets and social networks
+
+[<-----](https://github.com/s1tcomsfan/knowledge_warehouse/blob/main/Spark/contents.md)
+
+
 
