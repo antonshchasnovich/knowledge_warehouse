@@ -56,3 +56,7 @@ pip install numpy==1.19.3
 * rerun cmd
 
 [<-----](https://github.com/s1tcomsfan/knowledge_warehouse/blob/main/Spark/contents.md)
+
+***
+
+5) Spark graphical user interface (UI) in local mode is available at address **http://localhost:4040/**

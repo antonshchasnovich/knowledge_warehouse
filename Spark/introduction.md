@@ -26,7 +26,7 @@
 
 ## Components and architecture
 
-![Components and architecture](https://github.com/s1tcomsfan/knowledge_warehouse/blob/main/Spark/img/components_and_architecture.jpg)
+![Components and architecture](img/components_and_architecture.jpg)
 
 * **Spark driver** - as the part of the Spark application responsible for instantiating a SparkSession, the Spark driver has multiple roles: it communicates with the cluster manager; it requests resources (CPU, memory, etc.) from the cluster manager for Spark’s executors (JVMs); and it transforms all the Spark operations into DAG computations, schedules them, and distributes their execution as tasks across the Spark executors. Once the resources are allocated, it communicates directly with the executors.
 
@@ -40,7 +40,7 @@
 
 Actual physical data is distributed across storage as partitions residing. While the data is distributed as partitions across the physical cluster, Spark treats each partition as a high-level logical data abstraction — as a DataFrame in memory. Though this is not always possible, each Spark executor is preferably allocated a task that requires it to read the partition closest to it in the network, observing **data locality**.
 
-![Executors and partitions](https://github.com/s1tcomsfan/knowledge_warehouse/blob/main/Spark/img/executors_and_partitions.jpg)
+![Executors and partitions](img/executors_and_partitions.jpg)
 
 ## Popular Spark use cases
 
