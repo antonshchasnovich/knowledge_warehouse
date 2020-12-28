@@ -1,3 +1,5 @@
+[<-----](https://github.com/s1tcomsfan/knowledge_warehouse/blob/main/Spark/contents.md)
+
 ## Spark application concepts
 
 * **Application** - a user program built on Spark using its APIs. It consists of a driver program and executors on the cluster.
@@ -51,3 +53,5 @@ Spark includes a **graphical user interface** that you can use to inspect or mon
 * Information about the environment
 * Information about the running executors
 * All the Spark SQL queries
+
+[<-----](https://github.com/s1tcomsfan/knowledge_warehouse/blob/main/Spark/contents.md)
