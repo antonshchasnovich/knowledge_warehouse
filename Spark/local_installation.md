@@ -11,27 +11,26 @@
 
 3) cd into that directory
 
-4) to start PySpark, cd to the bin directory and type pyspark
+4) Running from root dir
+* ***Using python shell***
+```
+.\bin\pyspark
+```
+* ***Using spark-submit***
+    * ***running python scripts***
+    ```
+    .\bin\spark-submit D:\path\to\script\script_name.py another arguments for script
+    ```
+    * ***running scala scripts***
+        * build jar using sbt
+        ```
+         $sbt clean package
+        ```
+        * run the application
+        ```
+        $SPARK_HOME/bin/spark-submit --class main.scala.chapter2.MnMcount \ jars/main-scala-chapter2_2.12-1.0.jar data/mnm_dataset.csv
+        ```
 
-```
-$ pyspark
-Python 3.7.3 (default, Mar 27 2019, 09:23:15)
-[Clang 10.0.1 (clang-1001.0.46.3)] on darwin
-Type "help", "copyright", "credits" or "license" for more information.
-20/02/16 19:28:48 WARN NativeCodeLoader: Unable to load native-hadoop library
-for your platform... using builtin-java classes where applicable
-Welcome to
- ____ __
- / __/__ ___ _____/ /__
- _\ \/ _ \/ _ `/ __/ '_/
- /__ / .__/\_,_/_/ /_/\_\ version 3.0.0-preview2
- /_/
-Using Python version 3.7.3 (default, Mar 27 2019 09:23:15)
-SparkSession available as 'spark'.
->>> spark.version
-'3.0.0-preview2'
->>>
-```
 
 **There are possible errors on step 4**
 
