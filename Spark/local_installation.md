@@ -59,4 +59,23 @@ pip install numpy==1.19.3
 
 ***
 
+**Error:** Error while deleting tmp files
+```
+ERROR ShutdownHookManager: Exception while deleting Spark temp dir: path/to/tmp/dir ...
+WARN SparkEnv: Exception while deleting Spark temp dir: path/to/tmp/dir ...
+```
+
+**Solution:**
+***Can't make a normal colution so there few steps to hide logs and make deleting of tmp files more comfortable:***
+* Change Spark local tmp dir by setting of enviroment variable SPARK_LOCAL_DIRS -> d:\spark-tmp\tmp 
+* Add to .../root/dir/conf/log4j.properties file (if file is not exist copy and rename log4j.properties.template):
+```
+log4j.logger.org.apache.spark.util.ShutdownHookManager=OFF
+log4j.logger.org.apache.spark.SparkEnv=ERROR
+``` 
+* spark-shell internally calls spark-shell.cmd file. So add rmdir /q /s "your_dir\tmp" (work with using of spark-shell - scala API)
+* delete tmp dir manually
+
+***
+
 5) Spark graphical user interface (UI) in local mode is available at address **http://localhost:4040/**
