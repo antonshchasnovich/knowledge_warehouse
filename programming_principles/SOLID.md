@@ -1,3 +1,5 @@
+[<-----](https://github.com/s1tcomsfan/knowledge_warehouse/blob/main/programming_principles/contents.md)
+
 # SOLID
 
 ## Single Responsibility Principle
@@ -209,3 +211,5 @@ class PasswordReminder {
 ```
 
 Теперь оба модуля зависят от абстракции.
+
+[<-----](https://github.com/s1tcomsfan/knowledge_warehouse/blob/main/programming_principles/contents.md)
