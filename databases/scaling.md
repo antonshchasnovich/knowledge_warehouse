@@ -1,3 +1,5 @@
+[<-----](https://github.com/s1tcomsfan/knowledge_warehouse/blob/main/databases/contents.md)
+
 # Масштабирование
 
 ## Вертикальное
@@ -142,3 +144,5 @@ DO INSTEAD INSERT INTO news_2 VALUES (NEW.*);
 ```
 
 ### Репликация
+
+[<-----](https://github.com/s1tcomsfan/knowledge_warehouse/blob/main/databases/contents.md)
