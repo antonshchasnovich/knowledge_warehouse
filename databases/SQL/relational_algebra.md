@@ -1,3 +1,5 @@
+[<-----](https://github.com/s1tcomsfan/knowledge_warehouse/blob/main/databases/SQL/contents.md)
+
 # Реляционная алгебра
 
 Набор операций, которые можно делать с множествами (таблицами), делая запросы к базе.
@@ -53,3 +55,5 @@ JOIN channels ON (movies.channel_id = channels.id)
 **Деление** - не используется на практике, не имеет прямой конструкции в SQL, реализуется комбинацией имеющихся комманд
 
 **Важно** - сложные запросы, состоящие из множества операций, могут преобразовываться СУБД без потери смысла с целью оптимизации.
+
+[<-----](https://github.com/s1tcomsfan/knowledge_warehouse/blob/main/databases/SQL/contents.md)
